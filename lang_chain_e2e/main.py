@@ -26,6 +26,8 @@ prompt = ChatPromptTemplate.from_messages([
     ])
 
 def main():
+    """This is the main program, a simple flow of get your api key, get the llm, and start a Q&A session,
+    NOTE: there is no session history on this example."""
     os.environ["GOOGLE_API_KEY"] = getpass.getpass("Enter your Google AI API key: ")
     llm = get_gemini_flash()
     

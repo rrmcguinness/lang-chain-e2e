@@ -16,6 +16,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 
 def get_gemini_flash():
+    """Initializes a factual agent for gemini"""
     return ChatGoogleGenerativeAI(
         model="gemini-1.5-flash",
         temperature=0.2,
@@ -25,4 +26,5 @@ def get_gemini_flash():
     )
     
 def get_embeddings_model():
+    """For later use, but shows how to use embeddings"""
     return GoogleGenerativeAIEmbeddings(model="models/embedding-004")
