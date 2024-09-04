@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "lang-chain-e2e"
+version = "0.1.0"
+description = ""
+authors = ["Ryan McGuinness <rmcguinness@google.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+langchain-google-genai = "^1.0.10"
+
+
+langchain-community = "^0.2.15"
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+example = 'lang_chain_e2e.main:main'
