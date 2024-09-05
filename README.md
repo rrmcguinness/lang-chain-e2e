@@ -21,6 +21,13 @@ Install pipx, and poetry.
 
 Have a Google Token for running the queries (https://aistudio.google.com/app/apikey)
 
+Login to your Google CLI project
+
+### Google APIs required
+
+* Vertex AI API
+* Generative Language API
+
 ## The Examples
 
 There are two examples in this kit so far:
