@@ -21,6 +21,13 @@ Install pipx, and poetry.
 
 Have a Google Token for running the queries (https://aistudio.google.com/app/apikey)
 
+## The Examples
+
+There are two examples in this kit so far:
+
+* A sarcastic yet useful agent for simple Q&A (no session)
+* A Retrieval Augmented Generation (RAG) model using Gemini and Vertex embeddings.
+
 ## Run the example
 
 From your terminal:
@@ -34,12 +41,11 @@ poetry shell
 # Install the dependencies in the virtual environment
 poetry install
 
-# Run the program
-example
+# Run the simple agent program
+example agent 
+
+# Run the RAG agent
+example books
+
+# Note, the books example will use quota from the embeddings client and each query is executed against your Gemini Flash Quota
 ```
-
-## Overview
-
-This example program uses langchain to quickly connect a project to Gemini
-setting the system instruction and evaluating each question independently.
-

@@ -11,10 +11,12 @@ langchain-google-genai = "^1.0.10"
 
 
 langchain-community = "^0.2.15"
+pypdf = "^4.3.1"
+chromadb = "^0.5.5"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 
 [tool.poetry.scripts]
-example = 'lang_chain_e2e.main:main'
+example = 'lang_chain_e2e.cli:main'
